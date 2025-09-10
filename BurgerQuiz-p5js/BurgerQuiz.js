@@ -23,8 +23,8 @@ var horseshoeslemonade;
 function preload() {
   horseshoeslemonade = loadFont('assets/horseshoeslemonade.ttf');
   
-  ketchup = loadImage("assets/ketchup.svg");  // Load the image into the program
-  mayo = loadImage("assets/mayo.svg");  // Load the image into the program
+  ketchup = loadImage("assets/guacamole.svg");  // Load the image into the program
+  mayo = loadImage("assets/houmous.svg");  // Load the image into the program
   
   burgerDeLaMort = loadImage("assets/burger.svg");
   nuggets = loadImage("assets/nuggets.svg");
@@ -60,8 +60,8 @@ function draw() {
     image(mayo, windowWidth/4*3-mayo.width/2, windowHeight/2.5-mayo.height/2);
     fill(52, 101, 164); 
     
-    text(ketchupMiams + " miams", windowWidth/4, windowHeight/2.5+ketchup.height*.8);
-    text(mayoMiams + " miams", windowWidth/4*3,windowHeight/2.5+mayo.height*.8);
+    text(ketchupMiams + " meuhs", windowWidth/4, windowHeight/2.5+ketchup.height*.8);
+    text(mayoMiams + " meuhs", windowWidth/4*3,windowHeight/2.5+mayo.height*.8);
   }
   if(ketchupMiams == 25 || mayoMiams == 25) {
     background(0);
