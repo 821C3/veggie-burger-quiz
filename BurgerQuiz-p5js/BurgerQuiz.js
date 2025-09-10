@@ -46,10 +46,10 @@ function draw() {
   background(0);
   
   if(yellowBackground)
-    background(237, 212, 0);
+    background(255, 175, 9);
   
   if(redBackground)
-    background(204, 0, 0);
+    background(50, 194, 112);
   
   if(blackBackground)
     background(0);
@@ -63,10 +63,10 @@ function draw() {
     text(ketchupMiams + " meuhs", windowWidth/4, windowHeight/2.5+ketchup.height*.8);
     text(mayoMiams + " meuhs", windowWidth/4*3,windowHeight/2.5+mayo.height*.8);
   }
-  if(ketchupMiams == 25 || mayoMiams == 25) {
+/*   if(ketchupMiams == 25 || mayoMiams == 25) {
     background(0);
     image(burgerDeLaMort, windowWidth/2-burgerDeLaMort.width/2, windowHeight/2-burgerDeLaMort.height/2);
-  }
+  } */
   if(drawNuggets) {
     background(0);
     image(nuggets, windowWidth/2-nuggets.width/2, windowHeight/2-nuggets.height/2);
@@ -101,22 +101,22 @@ function keyTyped() {
     redBackground = true;
   }
   
-  if (key == 'k') {
-    if(ketchupMiams < 25)
+  if (key == 'g') {
+    if(ketchupMiams < 100)
       ketchupMiams ++;
       resetBooleans();
   }
-  if (key == 'j') {
+  if (key == 'v') {
     if(ketchupMiams > 0)
       ketchupMiams --;
       resetBooleans();
   }
-  if (key == 'm') {
-    if(mayoMiams < 25)
+  if (key == 'h') {
+    if(mayoMiams < 100)
       mayoMiams ++;
       resetBooleans();
   }
-  if (key == 'l') {
+  if (key == 'b') {
     if(mayoMiams > 0)
       mayoMiams --;
       resetBooleans();
